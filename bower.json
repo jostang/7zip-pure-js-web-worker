@@ -1,0 +1,15 @@
+{
+  "name": "7z-webworker",
+  "homepage": "https://github.com/jostang/7zip-pure-js-web-worker",
+  "description": "Use 7-Zip inside a web worker",
+  "main": "lib/index.js",
+  "keywords": [
+    "7zip",
+    "zip",
+    "decompress"
+  ],
+  "private": true,
+  "ignore": [
+    "bower_components"
+  ]
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script type="text/javascript" src="../lib/index.js"></script>
+<body>
+
+<input type="file" id="file">
+<input type="text" id="password" placeholder="Password">
+
+<script>
+    document.getElementById('file').onchange = function (event) {
+        if (event.target.files.length > 0) {
+            SevenZip.decompress(
+                event.target.files[0],
+                document.getElementById('password').value
+            ).then(function (result) {
+                console.log(result);
+            });
+        }
+    };
+</script>
+</body>
+</html>
